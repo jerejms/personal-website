@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yourname.lol</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="enter">
+        <div class="enter-card">
+            <h1>jerejms</h1>
+
+            <div class="loader">
+                <div class="loader-top">
+                    <span class="dim" id="loadText">booting…</span>
+                    <span class="dim" id="loadPct">0%</span>
+                </div>
+                <div class="bar">
+                    <div class="fill" id="loadFill"></div>
+                </div>
+                <p class="dim" id="clickHint" style="display:none;">click anywhere to enter ✦</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg"></div>
+    <div class="cursorGlow"></div>
+    <div class="crt"></div>
+
+<div class="os">
+  <header class="os-top">
+    <div class="os-title">
+      Snowlite's Personal Website: <span class="dim">Serial Number 0001</span>
+    </div>
+
+    <div class="os-hints">
+      <span class="dim">status:</span> <span class="ok">ONLINE</span>
+      <span class="dim" id="motd" style="margin-left:12px;"></span>
+    </div>
+  </header>
+
+  <div class="os-body">
+    <aside class="menu">
+      <div class="menu-title">MENU</div>
+      <button class="menu-item active" data-page="home">HOME</button>
+      <button class="menu-item" data-page="about">ABOUT</button>
+      <button class="menu-item" data-page="portfolio">PORTFOLIO</button>
+      <button class="menu-item" data-page="links">LINKS</button>
+      <button class="menu-item" data-page="gallery">GALLERY</button>
+      <div class="menu-footer"><span class="dim">user:</span> anonymous</div>
+    </aside>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div class="panel-left">
+          <img class="avatar" src="avatar.jpeg" alt="avatar" />
+          <div>
+            <div class="handle">Jeremiah James</div>
+            <div class="status">doing random things • building cool stuff</div>
+          </div>
+        </div>
+
+        <div class="panel-right">
+          <button class="chip" id="muteBtn">MUTE </button>
+          <button class="chip" id="themeBtn">SAKURA </button>
+        </div>
+      </div>
+
+      <div class="panel-content">
+        <div class="page active" id="page-home">
+          <h1>Welcome!</h1>
+          <p id="line1"></p>
+          <p id="line2"></p>
+          <p class="dim" id="line3">Tip: use the menu on the left to navigate.</p>
+        </div>
+
+
+        <div class="page" id="page-about">
+          <h1>About</h1>
+          <p>I am Jeremiah James, and I'm currently pursuing Electrical Engineering
+            at the National University of Singapore. I like to do random cool things that are coding related.
+            Thanks for stopping by!
+          </p>
+        </div>
+
+        <div class="page" id="page-portfolio">
+            <h1>Portfolio</h1>
+
+            <div class="positions stagger">
+                <div class="position">
+                    <div class="pos-title">Junior Developer</div>
+                    <div class="pos-meta dim">Perhimpunan Indonesia NUS · 2025 — Present</div>
+                    <p class="pos-desc">
+                    • Made Backend Contributions for PINUS Marketplace.
+                    </p>
+                </div>
+                <div class="position">
+                    <div class="pos-title">Power Engineer</div>
+                        <div class="pos-meta dim">HornetXI NUS · 2025 — Present</div>
+                        <p class="pos-desc">
+                        • Designed a Battery Management Board using Altium for an underwater AUV.
+                        </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page" id="page-links">
+          <h1>Links</h1>
+          <div class="links">
+            <a href="https://codeforces.com/profile/jerejms15" target="_blank">Codeforces</a>
+            <a href="https://www.linkedin.com/in/jerejms" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jerejms" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="page" id="page-gallery">
+            <h1>GALLERY</h1>
+            <div class="gallery-cards stagger">
+                <a class="gcard" href="gallery1.jpeg" target="_blank">
+                <img src="gallery1.jpeg" alt="Photo" />
+                <div class="gmeta">
+                    <div class="gtitle">Botanic Gardens</div>
+                    <div class="gtag dim">Singapore • 2025</div>
+                </div>
+                </a>
+
+                <a class="gcard" href="gallery2.jpeg" target="_blank">
+                <img src="gallery2.jpeg" alt="Screenshot" />
+                <div class="gmeta">
+                    <div class="gtitle">Home</div>
+                    <div class="gtag dim">Surabaya • 2025</div>
+                </div>
+                </a>
+
+                <a class="gcard" href="gallery3.jpeg" target="_blank">
+                <img src="gallery3.jpeg" alt="Artwork" />
+                <div class="gmeta">
+                    <div class="gtitle">Business Class</div>
+                    <div class="gtag dim">Singapore Airlines • 2025</div>
+                </div>
+                </a>
+            </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="date-widget">
+  <div class="dt-top">
+    <div class="dt-time" id="dtTime">00:00</div>
+    <div class="dt-ampm dim" id="dtAmpm"></div>
+  </div>
+  <div class="date-day" id="dateDay">Monday</div>
+  <div class="date-main">
+    <span class="date-month" id="dateMonth">January</span>
+    <span class="date-num" id="dateNum">1</span>
+  </div>
+  <div class="date-year" id="dateYear">2026</div>
+</div>
+
+<div class="player">
+  <div class="track">
+    <div class="track-name">Soft Spot</div>
+    <div class="track-artist dim">keshi</div>
+  </div>
+
+  <div class="controls">
+    <button class="ctl" id="playBtn">▶</button>
+    <button class="ctl" id="pauseBtn">❚❚</button>
+    <div class="vol">
+      <span class="dim">VOL</span>
+      <input id="vol" type="range" min="0" max="1" step="0.01" value="0.35" />
+    </div>
+  </div>
+
+  <div class="now dim" id="nowPlaying">music: off</div>
+</div>
+
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
+
